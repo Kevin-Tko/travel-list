@@ -1,13 +1,154 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #343a40;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-family: "Monoton", sans-serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+    word-spacing: 1rem;
+    letter-spacing: -0.3rem;
+    background-color: #f4a226;
+    color: #798087;
+    padding: 1.8rem;
+}
+
+.form {
+    width: 100%;
+    background-color: #f76707;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 3.2rem;
+}
+
+.form form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.form form input {
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+.form form input:focus {
+    outline: none;
+}
+
+.form form button {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: #38d9a9;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.form form select {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 10rem;
+    cursor: pointer;
+}
+
+.form form select:focus {
+    outline: none;
+}
+
+.list {
+    background-color: #62410f;
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.list ul li {
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 1.2rem;
+    background-color: #c3821e;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.list ul li button {
+    font-size: 1.6rem;
+    background-color: inherit;
+    border: none;
+}
+
+.btn-box {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.list select,
+.list button {
+    padding: 0.5rem 1rem;
+    background-color: #fdecd4;
+    border: none;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+}
+
+.list button:focus,
+.list select:focus {
+    outline: none;
+}
+
+.stats {
+    text-align: center;
+    padding: 3.2rem 0;
+    background-color: #38d9a9;
 }
